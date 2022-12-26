@@ -8,7 +8,7 @@
     "dev": "webpack serve",
     "build": "webpack"
   },
-  "author": "Shamim Sedghi <mim24sd@gmail.com>",
+  "author": "Shamim Sedghi <mim24sd@gmail.com> (https://www.linkedin.com/in/shamim-sedghi-b026a2207/)",
   "repository": "https://github.com/mim24sd/survey-app",
   "license": "MIT",
   "devDependencies": {
