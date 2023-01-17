@@ -1,6 +1,5 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CSSPlugin = require("@modular-css/webpack/plugin");
 
 module.exports = {
   entry: path.join(__dirname, "src", "App.jsx"),
@@ -20,26 +19,18 @@ module.exports = {
         },
       },
       {
-        test: /\.((s*)css|sass)$/i,
+        test: /\.(scss)$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|jp(e*)g|svg|gif)$/,
         use: ["file-loader"],
       },
-      {
-        test: /.css$/,
-        use: "@modular-css/webpack/loader",
-      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "index.html"),
-    }),
-    new CSSPlugin({
-      css: "./output.css",
-      json: "./output.json",
     }),
   ],
   mode: "development",

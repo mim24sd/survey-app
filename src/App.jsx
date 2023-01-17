@@ -1,13 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
+import Home from "./pages/Home/Home.jsx";
 
 const App = () => {
-  return (
-    <div>
-      <p>hi</p>
-      <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="logo" />
-    </div>
-  );
+  return <Home />;
 };
 
 render(<App />, document.getElementById("root"));
