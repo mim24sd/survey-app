@@ -1,0 +1,29 @@
+@import "./assests/variables.module.scss";
+@import "./assests/reset.module.scss";
+
+body {
+  background-color: $background-secondary-color;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+h1,
+a,
+p,
+li,
+input,
+label {
+  font-family: $font-primary;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    background-color: $background-primary-color;
+  }
+}
